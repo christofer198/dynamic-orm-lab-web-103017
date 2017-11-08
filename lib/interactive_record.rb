@@ -23,7 +23,7 @@ class InteractiveRecord
 
   def initialize(attributes={})
     attributes.each {|key, value| self.send(("#{key}="), value)}
-    binding.pry
+    #binding.pry
   end
 
 end
