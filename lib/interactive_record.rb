@@ -53,6 +53,13 @@ class InteractiveRecord
   end
 
   def self.find_by_name(name)
-    DB[:conn].execute("SELECT * FROM #{table_name} WHERE name='#{name}'")
+    DB[:conn].execute("SELECT * FROM #{self.table_name} WHERE name='#{name}'")
   end
+
+  def self.find_by(hsh)
+    binding.pry
+    
+  end
+    
+  
 end
