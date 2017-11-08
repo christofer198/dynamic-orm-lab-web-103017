@@ -18,9 +18,6 @@ class InteractiveRecord
 
   end
   #binding.pry
-  self.column_names.each do |key|
-    attr_accessor key.to_sym
-  end
 
   def initialize(attributes={})
     binding.pry
