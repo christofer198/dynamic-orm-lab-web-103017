@@ -13,6 +13,7 @@ class InteractiveRecord
     row = DB[:conn].execute(sql)
 
     column = row.collect {|row| row[1]}.delete("id")
+    binding.pry
     column
 
     #binding.pry
