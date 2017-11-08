@@ -23,10 +23,11 @@ class InteractiveRecord
     childclass.each do |key|
       attr_accessor key.to_sym
     end
+  end
 
   def initialize(attributes={})
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 
-  
+
 end
