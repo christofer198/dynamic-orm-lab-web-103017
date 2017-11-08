@@ -38,9 +38,10 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    #binding.pry
-    x = []
-    self.class.column_names.each {|name| x << "'#{send(name)}'"}
+    binding.pry
+    
+    x = col_names_for_insert.split(', ')
+    x.each{|name| "send "}
     x.join(", ")
   end
 
