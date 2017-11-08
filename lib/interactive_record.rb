@@ -38,7 +38,8 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    self
+    self.name
+    self.grade
   end
 
 end
