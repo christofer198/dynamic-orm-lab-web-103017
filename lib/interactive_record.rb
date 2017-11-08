@@ -18,11 +18,12 @@ class InteractiveRecord
     
   end
   #binding.pry
-  
-  
+
+  self.column_names.each do |col_name|
+    attr_writer col_name.to_sym
+  end
 
   def initialize(attributes={})
-    
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 
