@@ -7,6 +7,6 @@ class InteractiveRecord
   def self.table_name
     binding.pry
     self.downcase.pluralize
-    
+
   end
 end
