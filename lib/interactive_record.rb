@@ -58,8 +58,8 @@ class InteractiveRecord
 
   def self.find_by(hsh)
     binding.pry
-    
+
   end
-    
-  
+
+
 end
