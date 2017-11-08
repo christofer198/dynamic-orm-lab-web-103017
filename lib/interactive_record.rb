@@ -39,7 +39,7 @@ class InteractiveRecord
 
   def values_for_insert
     binding.pry
-    
+
     x = col_names_for_insert.split(', ')
     x.each{|name| "send "}
     x.join(", ")
