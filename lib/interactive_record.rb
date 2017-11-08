@@ -15,7 +15,6 @@ class InteractiveRecord
     #column.delete('id')
     column
     #binding.pry
-
   end
 
   def self.inherited(childclass)
@@ -33,7 +32,7 @@ class InteractiveRecord
   end
 
   def col_names_for_insert
-    self.class.column_names
+    self.class.column_names.delete('id').join(", ")
   end
 
 end
