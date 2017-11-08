@@ -17,8 +17,12 @@ class InteractiveRecord
     #binding.pry
   end
 
+  self.column_names.each do |col_name|
+    attr_accessor key.to_sym
+  end
+
   def initialize(attributes={})
-    attributes.each {|key, value| attr_accessor key.to_sym}
+    attributes.each {|key, value| self.send(('#{key}='), value)}
     #binding.pry
   end
 
