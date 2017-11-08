@@ -42,7 +42,7 @@ class InteractiveRecord
     data = []
     x = col_names_for_insert.split(', ')
     x.each{|name| data << send("#{name}")}
-    data.collect{|each| "'#{each}'"}.join(', ')
+    data.collect{|each| "'#{each}'"}.join(", ")
   end
 
 end
