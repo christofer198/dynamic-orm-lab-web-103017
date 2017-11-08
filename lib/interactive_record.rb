@@ -12,6 +12,6 @@ class InteractiveRecord
     sql = "PRAGMA table_info(#{self.table_name})"
     row = DB[:conn].execute(sql)
     binding.pry
-    
-  end 
+
+  end
 end
