@@ -18,7 +18,7 @@ class InteractiveRecord
   end
 
   def initialize(attributes={})
-    attributes.each {|key, value| attr_accessor key.to_s}
+    attributes.each {|key, value| attr_accessor key.to_symbol}
     #binding.pry
   end
 
