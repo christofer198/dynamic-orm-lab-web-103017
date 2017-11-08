@@ -11,6 +11,9 @@ class InteractiveRecord
   def self.column_names
     sql = "PRAGMA table_info(#{self.table_name})"
     row = DB[:conn].execute(sql)
+    
+    column = row.collect {|row| row[1]}.delete("id")
+    column
     binding.pry
 
   end
