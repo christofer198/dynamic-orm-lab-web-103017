@@ -16,14 +16,14 @@ class InteractiveRecord
     column
     #binding.pry
   end
-  binding.pry
+  #binding.pry
   self.column_names.each do |col_name|
     attr_accessor col_name.to_sym
   end
 
   def initialize(attributes={})
     attributes.each {|key, value| self.send(("#{key}="), value)}
-    #binding.pry
+    binding.pry
   end
 
 end
