@@ -17,7 +17,6 @@ class InteractiveRecord
     #binding.pry
 
   end
-  #binding.pry
 
   def self.inherited(childclass)
     childclass.column_names.each do |key|
