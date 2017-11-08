@@ -18,6 +18,8 @@ class InteractiveRecord
   end
 
   def initialize(attr={})
+    attr.each {|key, value| self.send(("#{key}="), value)}
+
     binding.pry
   end
 
