@@ -38,8 +38,8 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    #binding.pry
-    self['name'].each
+    binding.pry
+    attr_accessors
   end
 
 end
