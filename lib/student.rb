@@ -3,6 +3,6 @@ require 'active_support/inflector'
 require 'interactive_record.rb'
 
 class Student < InteractiveRecord
-  def initialize
+  def initialize(attr)
   end
 end
