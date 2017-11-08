@@ -15,7 +15,7 @@ class InteractiveRecord
     #column.delete('id')
     column
     #binding.pry
-    
+
   end
   #binding.pry
 
