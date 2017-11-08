@@ -17,7 +17,7 @@ class InteractiveRecord
     #binding.pry
   end
 
-  def initialize(attributes)
+  def initialize
   end
 
 
