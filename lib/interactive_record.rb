@@ -37,4 +37,8 @@ class InteractiveRecord
     column_names.join(', ')
   end
 
+  def values_for_insert
+    
+  end
+
 end
