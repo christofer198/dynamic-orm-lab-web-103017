@@ -20,7 +20,7 @@ class InteractiveRecord
   #binding.pry
 
   def self.inherited(childclass)
-    childclass.each do |key|
+    childclass.column_names.each do |key|
       attr_accessor key.to_sym
     end
   end
