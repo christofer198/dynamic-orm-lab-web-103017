@@ -14,7 +14,8 @@ class InteractiveRecord
 
     column = row.collect {|row| row[1]}.delete("id")
     column
-    binding.pry
+    
+    #binding.pry
 
   end
 end
