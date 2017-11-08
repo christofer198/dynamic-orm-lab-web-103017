@@ -3,7 +3,5 @@ require 'active_support/inflector'
 require 'interactive_record.rb'
 
 class Student < InteractiveRecord
-  def name
-    "helo"
-  end
+  
 end
