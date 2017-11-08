@@ -38,7 +38,7 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    
+    col_names_for_insert.split(', ').each { |value| value.to_s}
   end
 
 end
