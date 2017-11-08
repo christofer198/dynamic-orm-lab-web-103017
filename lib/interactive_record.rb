@@ -38,6 +38,7 @@ class InteractiveRecord
   end
 
   def values_for_insert
+    binding.pry
     x = []
     self.class.column_names.each {|name| x << "'#{send(name)}'" unless send(name).nil?}
     x.join(", ")
