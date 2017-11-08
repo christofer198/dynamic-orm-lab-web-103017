@@ -18,8 +18,7 @@ class InteractiveRecord
   end
 
   def initialize(attributes={})
-    attributes.each {|key, value| self.send(("#{key}="), value)}
-    @id = nil 
+    attributes.each {|key, value| attr_accessor key.to_s}
     #binding.pry
   end
 
