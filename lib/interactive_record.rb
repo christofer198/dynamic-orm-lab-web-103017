@@ -19,9 +19,14 @@ class InteractiveRecord
   end
   #binding.pry
 
+  def self.inherited(childclass)
+    childclass.each do |key|
+      attr_accessor key.to_sym
+    end
+
   def initialize(attributes={})
-    #binding.pry
     attributes.each {|key, value| self.send(("#{key}="), value)}
   end
 
+  
 end
