@@ -45,4 +45,8 @@ class InteractiveRecord
     data.collect{|each| "'#{each}'"}.join(", ")
   end
 
+  def save
+
+  end
+
 end
