@@ -17,8 +17,4 @@ class InteractiveRecord
     #binding.pry
   end
 
-  def initialize
-  end
-
-
 end
