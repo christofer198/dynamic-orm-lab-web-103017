@@ -58,7 +58,7 @@ class InteractiveRecord
 
   def self.find_by(hsh)
     binding.pry
-
+    DB[:conn].execute("SELECT * FROM #{self.table_name} WHERE #{hsh.keys.join}='#{hsh.values.join}'")
   end
 
 
