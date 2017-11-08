@@ -39,7 +39,7 @@ class InteractiveRecord
 
   def values_for_insert
     #binding.pry
-    self.['name'].each
+    self['name'].each
   end
 
 end
