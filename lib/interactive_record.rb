@@ -38,8 +38,7 @@ class InteractiveRecord
   end
 
   def values_for_insert
-    self.name
-    self.grade
+    self.each{|value| value}
   end
 
 end
